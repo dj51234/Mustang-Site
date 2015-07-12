@@ -1,0 +1,116 @@
+#header
+	max-width: 100%
+	margin: 0 auto
+	// background-color: #111
+	padding: 0px 10px
+
+
+
+
+	nav
+		max-width: 645px
+		padding-top: 50px
+		margin-left: 67px
+		clear: both
+		border-bottom: 1px solid #222
+		padding-bottom: 15px
+
+		a 
+			font-family: 'Oswald'
+			text-decoration: none 
+			font-size: 14px
+			font-weight: 300
+			color: #DDD
+			padding: 0 42px 15px 40px
+			border-right: 1px solid #222
+			text-transform: uppercase
+
+			&:hover
+				border-bottom: 2px solid $orange
+				color: white
+
+			&:nth-child(4)
+				border-right: none
+		
+	.ford-logo
+		background: url(/assets/images/ford-logo.png)
+		width: 96px
+		height: 37px
+		background-size: contain
+		margin-top: 20px
+		margin-left: 100px
+		display: inline-block
+		float: left
+
+	.social-search
+		float: right
+		max-width: 347px
+		display: flex
+		justify-content: space-around
+		clear: both
+		margin-top: -125px
+		margin-right: 100px
+
+		.social
+			margin-left: -50px
+			.ion-social-youtube
+				font-size: 30px
+				color: transparentize($orange,.2)
+				margin-right: 20px
+				padding-left: 15px
+				border-left: 1px solid transparentize($orange,.2)
+				
+				&:hover
+					color: $orange
+					+transform(rotate(45deg))
+
+			.ion-social-facebook
+				font-size: 30px
+				color: transparentize($orange,.2)
+				margin-right: 15px
+
+				&:hover
+					color: $orange
+
+			.ion-social-twitter
+				font-size: 30px
+				color: transparentize($orange,.2)
+				margin-right: 15px
+				padding-left: 15px
+				border-left: 1px solid transparentize($orange,.2)
+
+				&:hover
+					color: $orange
+
+		form 
+			position: relative
+			float: right
+			margin-top: 7px
+
+			input 
+				border-radius: 5px
+				border: none
+				padding: 5px
+				width: 220px
+
+			.ion-search
+				color: #ADADAD
+				+position(absolute, 6% 5% null null) 
+				font-size: 18px
+
+
+@media (max-width: 780px)
+
+	#header
+		.ford-logo
+			display: none
+
+		.social-search
+			display: none
+
+		nav 
+			text-align: center
+			margin: 0
+			a
+				padding: 10px 10px
+		
