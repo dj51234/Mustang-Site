@@ -1,8 +1,8 @@
 #footer
 	.footer-content
 		display: flex
-		justify-content: space-between
-		align-items: center
+		justify-content: space-around
+		align-items: top
 		max-width: 960px
 		margin: 70px auto 30px
 		border-top: 1px solid transparentize(white, .9)
@@ -16,18 +16,27 @@
 				margin-left: -75px
 
 			li 
+				color: #BBB
 				list-style-type: none
 				font-weight: 300
+
+				&:hover
+					color: white
 
 				b 
 					color: white
 
 			a 
 				color: #BBB
-				text-decoration: none 
+				text-decoration: none
+
+				&:visited
+					color: white 
 
 				&:hover
 					color: white 
+
+
 	p 
 		color: transparentize(white, .5)
 		font-weight: 300

@@ -8,7 +8,7 @@
 
 
 	nav
-		max-width: 645px
+		max-width: 638px
 		padding-top: 50px
 		margin-left: 67px
 		clear: both
@@ -24,10 +24,12 @@
 			padding: 0 42px 15px 40px
 			border-right: 1px solid #222
 			text-transform: uppercase
+			
 
 			&:hover
 				border-bottom: 2px solid $orange
 				color: white
+
 
 			&.active
 				border-bottom: 2px solid $orange
@@ -45,6 +47,10 @@
 		margin-left: 100px
 		display: inline-block
 		float: left
+		opacity: .5
+
+		&:hover
+			opacity: .65
 
 	.social-search
 		float: right
@@ -59,18 +65,18 @@
 			margin-left: -50px
 			.ion-social-youtube
 				font-size: 30px
-				color: transparentize($orange,.2)
+				color: transparentize($orange,0.03)
 				margin-right: 20px
 				padding-left: 15px
-				border-left: 1px solid transparentize($orange,.7)
+				border-left: 1px solid transparentize($orange,.8)
 				
 				&:hover
 					color: $orange
-					+transform(rotate(45deg))
+					
 
 			.ion-social-facebook
 				font-size: 30px
-				color: transparentize($orange,.2)
+				color: transparentize($orange,0.03)
 				margin-right: 15px
 
 				&:hover
@@ -78,10 +84,10 @@
 
 			.ion-social-twitter
 				font-size: 30px
-				color: transparentize($orange,.2)
+				color: transparentize($orange,0.03)
 				margin-right: 15px
 				padding-left: 15px
-				border-left: 1px solid transparentize($orange,.7)
+				border-left: 1px solid transparentize($orange,.8)
 
 				&:hover
 					color: $orange

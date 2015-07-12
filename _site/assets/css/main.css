@@ -361,7 +361,7 @@ th {
   margin: 0 auto;
   padding: 0px 10px; }
   #header nav {
-    max-width: 645px;
+    max-width: 638px;
     padding-top: 50px;
     margin-left: 67px;
     clear: both;
@@ -392,7 +392,10 @@ th {
     margin-top: 20px;
     margin-left: 100px;
     display: inline-block;
-    float: left; }
+    float: left;
+    opacity: 0.5; }
+    #header .ford-logo:hover {
+      opacity: 0.65; }
   #header .social-search {
     float: right;
     max-width: 347px;
@@ -405,29 +408,24 @@ th {
       margin-left: -50px; }
       #header .social-search .social .ion-social-youtube {
         font-size: 30px;
-        color: rgba(249, 72, 40, 0.8);
+        color: rgba(249, 72, 40, 0.97);
         margin-right: 20px;
         padding-left: 15px;
-        border-left: 1px solid rgba(249, 72, 40, 0.3); }
+        border-left: 1px solid rgba(249, 72, 40, 0.2); }
         #header .social-search .social .ion-social-youtube:hover {
-          color: #F94828;
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg); }
+          color: #F94828; }
       #header .social-search .social .ion-social-facebook {
         font-size: 30px;
-        color: rgba(249, 72, 40, 0.8);
+        color: rgba(249, 72, 40, 0.97);
         margin-right: 15px; }
         #header .social-search .social .ion-social-facebook:hover {
           color: #F94828; }
       #header .social-search .social .ion-social-twitter {
         font-size: 30px;
-        color: rgba(249, 72, 40, 0.8);
+        color: rgba(249, 72, 40, 0.97);
         margin-right: 15px;
         padding-left: 15px;
-        border-left: 1px solid rgba(249, 72, 40, 0.3); }
+        border-left: 1px solid rgba(249, 72, 40, 0.2); }
         #header .social-search .social .ion-social-twitter:hover {
           color: #F94828; }
     #header .social-search form {
@@ -561,14 +559,18 @@ th {
     margin: 0 auto;
     text-align: center;
     margin: 0 auto;
-    width: 200px; }
+    width: 300px; }
     #main-cta .bg-img .prices .or {
       display: none; } }
 @media (max-width: 549px) {
+  #main-cta .bg-img .button {
+    position: absolute;
+    top: 38%;
+    left: 22%; }
   #main-cta .bg-img .prices {
     width: 300px; } }
 .top-cta {
-  width: 645px;
+  width: 638px;
   margin-left: 80px;
   display: flex;
   align-items: center;
@@ -582,7 +584,8 @@ th {
     .top-cta .header-btn:hover {
       opacity: 0.95; }
   .top-cta div {
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 0; }
     .top-cta div h1 {
       color: white;
       text-transform: uppercase;
@@ -600,12 +603,38 @@ th {
       font-size: 28px;
       display: inline-block;
       margin-right: 10px;
-      margin-left: 35px; }
+      margin-left: 20px; }
 
+@media (max-width: 700px) {
+  .top-cta {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.01);
+    padding-bottom: 10px; }
+    .top-cta .header-btn {
+      margin-right: 0; }
+    .top-cta div h1 {
+      font-size: 18px;
+      margin: 0 0 10px 0; }
+    .top-cta div h2 {
+      font-size: 18px;
+      margin: 0 0 10px 0; } }
 #features {
   color: white;
   text-align: center; }
   #features h1 {
+    font-size: 18px;
+    margin-top: 75px;
+    text-shadow: -4px -4px 3px rgba(252, 255, 252, 0.4);
+    text-transform: uppercase;
+    font-weight: 300; }
+
+#specs {
+  color: white;
+  text-align: center; }
+  #specs h1 {
     font-size: 18px;
     margin-top: 75px;
     text-shadow: -4px -4px 3px rgba(252, 255, 252, 0.4);
@@ -644,8 +673,8 @@ th {
 
 #footer .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: top;
   max-width: 960px;
   margin: 70px auto 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -656,13 +685,18 @@ th {
     #footer .footer-content ul:nth-child(2) {
       margin-left: -75px; }
     #footer .footer-content ul li {
+      color: #BBB;
       list-style-type: none;
       font-weight: 300; }
+      #footer .footer-content ul li:hover {
+        color: white; }
       #footer .footer-content ul li b {
         color: white; }
     #footer .footer-content ul a {
       color: #BBB;
       text-decoration: none; }
+      #footer .footer-content ul a:visited {
+        color: white; }
       #footer .footer-content ul a:hover {
         color: white; }
 #footer p {
@@ -677,4 +711,5 @@ body {
   font-family: "Oswald"; }
 
 body {
-  background-color: black; }
+  background: linear-gradient(rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.98)), url(/assets/images/bg.jpg);
+  background-size: cover; }
