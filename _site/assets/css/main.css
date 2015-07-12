@@ -372,11 +372,14 @@ th {
       text-decoration: none;
       font-size: 14px;
       font-weight: 300;
-      color: #DDD;
+      color: #CCC;
       padding: 0 42px 15px 40px;
       border-right: 1px solid #222;
       text-transform: uppercase; }
       #header nav a:hover {
+        border-bottom: 2px solid #F94828;
+        color: white; }
+      #header nav a.active {
         border-bottom: 2px solid #F94828;
         color: white; }
       #header nav a:nth-child(4) {
@@ -405,7 +408,7 @@ th {
         color: rgba(249, 72, 40, 0.8);
         margin-right: 20px;
         padding-left: 15px;
-        border-left: 1px solid rgba(249, 72, 40, 0.8); }
+        border-left: 1px solid rgba(249, 72, 40, 0.3); }
         #header .social-search .social .ion-social-youtube:hover {
           color: #F94828;
           -webkit-transform: rotate(45deg);
@@ -424,7 +427,7 @@ th {
         color: rgba(249, 72, 40, 0.8);
         margin-right: 15px;
         padding-left: 15px;
-        border-left: 1px solid rgba(249, 72, 40, 0.8); }
+        border-left: 1px solid rgba(249, 72, 40, 0.3); }
         #header .social-search .social .ion-social-twitter:hover {
           color: #F94828; }
     #header .social-search form {
@@ -453,16 +456,22 @@ th {
     margin: 0; }
     #header nav a {
       padding: 10px 10px; } }
+@media (max-width: 400px) {
+  #header nav {
+    padding-top: 10px;
+    width: 310px; }
+    #header nav a {
+      font-size: 10px; } }
 #main-cta .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/images/roush.jpg) left center no-repeat;
   max-width: 100%;
-  min-height: 770px;
+  height: 900px;
   margin: 0 auto;
   background-size: cover;
   position: relative; }
   #main-cta .bg-img .button {
     position: absolute;
-    top: 320px;
+    top: 42%;
     left: 250px;
     opacity: 0.88; }
     #main-cta .bg-img .button:hover {
@@ -471,7 +480,7 @@ th {
     float: left;
     text-align: left;
     margin-left: 100px;
-    margin-top: 75px; }
+    margin-top: 150px; }
     #main-cta .bg-img .main-title h1 {
       color: #F94828;
       background-color: #111;
@@ -495,7 +504,7 @@ th {
     height: 150px;
     display: flex;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 0;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.3); }
@@ -509,14 +518,26 @@ th {
       color: white; }
     #main-cta .bg-img .prices .or {
       margin-top: 80px; }
+#main-cta .copyright {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -75px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+  opacity: 0.4; }
 
-@media (max-width: 600px) {
+@media (max-width: 675px) {
+  #main-cta .bg-img .prices {
+    margin-left: 75px; } }
+@media (max-width: 635px) {
   #main-cta .bg-img .main-title {
-    margin-left: 50px;
-    margin-bottom: 250px; }
+    margin-left: 40px;
+    margin-bottom: 400px; }
     #main-cta .bg-img .main-title h1 {
-      font-size: 35px;
-      width: 300px;
+      font-size: 28px;
+      width: 240px;
       padding: 2px 10px; }
     #main-cta .bg-img .main-title h2 {
       color: #EEE;
@@ -531,19 +552,100 @@ th {
   #main-cta .bg-img .button {
     position: absolute;
     top: 290px;
-    left: 150px; }
+    left: 22%; }
   #main-cta .bg-img .prices {
     flex-direction: column;
     height: 240px;
     align-items: center;
     position: relative;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    width: 200px; }
     #main-cta .bg-img .prices .or {
       display: none; } }
+@media (max-width: 549px) {
+  #main-cta .bg-img .prices {
+    width: 300px; } }
+.top-cta {
+  width: 645px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.02);
+  justify-content: space-between;
+  margin-top: 5px; }
+  .top-cta .header-btn {
+    margin-bottom: -7px;
+    margin-right: 5px;
+    opacity: 0.91; }
+    .top-cta .header-btn:hover {
+      opacity: 0.95; }
+  .top-cta div {
+    display: inline-block; }
+    .top-cta div h1 {
+      color: white;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 28px; }
+      .top-cta div h1 span {
+        margin-right: 4px;
+        color: #F94828;
+        font-size: 30px;
+        font-weight: 700; }
+    .top-cta div h2 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 28px;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 35px; }
+
+#features {
+  color: white;
+  text-align: center; }
+  #features h1 {
+    font-size: 18px;
+    margin-top: 75px;
+    text-shadow: -4px -4px 3px rgba(252, 255, 252, 0.4);
+    text-transform: uppercase;
+    font-weight: 300; }
+
+#photo-gallery {
+  color: white;
+  text-align: center; }
+  #photo-gallery h1 {
+    font-size: 18px;
+    margin-top: 75px;
+    text-shadow: -4px -4px 3px rgba(252, 255, 252, 0.4);
+    text-transform: uppercase;
+    font-weight: 300; }
+
+#brochure-download {
+  color: white;
+  text-align: center; }
+  #brochure-download h1 {
+    font-size: 18px;
+    margin-top: 75px;
+    text-shadow: -4px -4px 3px rgba(252, 255, 252, 0.4);
+    text-transform: uppercase;
+    font-weight: 300; }
+
+#get-a-quote {
+  color: white;
+  text-align: center; }
+  #get-a-quote h1 {
+    font-size: 18px;
+    margin-top: 75px;
+    text-shadow: -4px -4px 3px rgba(252, 255, 252, 0.4);
+    text-transform: uppercase;
+    font-weight: 300; }
+
 #footer .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 960px;
   margin: 70px auto 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -551,6 +653,8 @@ th {
   #footer .footer-content ul {
     text-align: center;
     line-height: 35px; }
+    #footer .footer-content ul:nth-child(2) {
+      margin-left: -75px; }
     #footer .footer-content ul li {
       list-style-type: none;
       font-weight: 300; }
@@ -562,10 +666,10 @@ th {
       #footer .footer-content ul a:hover {
         color: white; }
 #footer p {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 2px; }
 

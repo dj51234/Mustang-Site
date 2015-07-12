@@ -3,13 +3,13 @@
 	.bg-img	
 		background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),  url(/assets/images/roush.jpg) left center no-repeat
 		max-width: 100%
-		min-height: 770px
+		height: 900px
 		margin: 0 auto
 		background-size: cover
 		position: relative
 
 		.button
-			+position(absolute, 320px null null 250px)
+			+position(absolute, 42% null null 250px)
 			opacity: .88
 
 			&:hover
@@ -20,7 +20,7 @@
 			float: left
 			text-align: left
 			margin-left: 100px
-			margin-top: 75px
+			margin-top: 150px
 
 			h1 
 				color: $orange
@@ -55,7 +55,7 @@
 			width: 500px
 			height: 150px
 			display: flex
-			+position(absolute, null null 20% 0)
+			+position(absolute, null null 30% 0)
 			justify-content: space-around
 			background-color: rgba(0,0,0,.3)
 			
@@ -73,21 +73,39 @@
 			.or 
 				margin-top: 80px
 
+	.copyright 
+		+position(absolute, null null 0 50%)
+		margin-left: -75px
+		color: white 
+		letter-spacing: 2px 
+		font-size: 12px
+		opacity: .4
 
-@media (max-width: 600px)
+
+@media (max-width: 675px)
+
+	#main-cta
+	
+		.bg-img
+
+			.prices 
+				margin-left: 75px
+
+
+@media (max-width: 635px)
 	#main-cta
 	
 		.bg-img	
-
+			
 
 			.main-title
 
-				margin-left: 50px
-				margin-bottom: 250px
+				margin-left: 40px
+				margin-bottom: 400px
 				
 				h1 
-					font-size: 35px
-					width: 300px
+					font-size: 28px
+					width: 240px
 					
 					padding: 2px 10px
 					
@@ -110,7 +128,7 @@
 							margin-top: 50px
 
 			.button
-				+position(absolute, 290px null null 150px)
+				+position(absolute, 290px null null 22%)
 
 			.prices
 				flex-direction: column
@@ -119,7 +137,23 @@
 				position: relative 
 				margin: 0 auto 
 				text-align: center
+				margin: 0 auto
+				width: 200px
 
 				.or 
 					display: none
+
+
+@media (max-width: 549px)
+
+	#main-cta
+	
+		.bg-img
+
+			.prices 
+				width: 300px
+				
+
+
+
 				

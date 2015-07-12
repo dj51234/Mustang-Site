@@ -20,12 +20,16 @@
 			text-decoration: none 
 			font-size: 14px
 			font-weight: 300
-			color: #DDD
+			color: #CCC
 			padding: 0 42px 15px 40px
 			border-right: 1px solid #222
 			text-transform: uppercase
 
 			&:hover
+				border-bottom: 2px solid $orange
+				color: white
+
+			&.active
 				border-bottom: 2px solid $orange
 				color: white
 
@@ -58,7 +62,7 @@
 				color: transparentize($orange,.2)
 				margin-right: 20px
 				padding-left: 15px
-				border-left: 1px solid transparentize($orange,.2)
+				border-left: 1px solid transparentize($orange,.7)
 				
 				&:hover
 					color: $orange
@@ -77,7 +81,7 @@
 				color: transparentize($orange,.2)
 				margin-right: 15px
 				padding-left: 15px
-				border-left: 1px solid transparentize($orange,.2)
+				border-left: 1px solid transparentize($orange,.7)
 
 				&:hover
 					color: $orange
@@ -113,4 +117,14 @@
 			margin: 0
 			a
 				padding: 10px 10px
+
+@media (max-width: 400px)
+	#header
 		
+		nav
+			padding-top: 10px
+			width: 310px
+
+			a 
+				font-size: 10px
+			
