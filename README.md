@@ -1,7 +1,7 @@
 # 2015 Mustang Site
 Site for Ford Mustang
 
-View Site At http://dj51234.github.io/Mustang-Site
+View Site At http://dj51234.github.io/Mustang-Site (When Complete)
 
 7/12/2015: Changed Color scheme from light blue to Dark Orange.  Home Page Image was too cluttered and didn't fit the site theme.
 
