@@ -28,18 +28,18 @@
 
 			&:hover
 				border-bottom: 2px solid $orange
-				color: white
+				color: transparentize($orange, .2) 
 
 
 			&.active
 				border-bottom: 2px solid $orange
-				color: white
+				color: transparentize($orange, .2) 
 
 			&:nth-child(4)
 				border-right: none
 		
 	.ford-logo
-		background: url(/assets/images/ford-logo.png)
+		background: url(../assets/images/ford-logo.png)
 		width: 96px
 		height: 37px
 		background-size: contain
@@ -47,10 +47,10 @@
 		margin-left: 100px
 		display: inline-block
 		float: left
-		opacity: .5
+		opacity: .65
 
 		&:hover
-			opacity: .65
+			opacity: .73
 
 	.social-search
 		float: right
@@ -65,7 +65,7 @@
 			margin-left: -50px
 			.ion-social-youtube
 				font-size: 30px
-				color: transparentize($orange,0.03)
+				color: transparentize($orange,0.1)
 				margin-right: 20px
 				padding-left: 15px
 				border-left: 1px solid transparentize($orange,.8)
@@ -76,7 +76,7 @@
 
 			.ion-social-facebook
 				font-size: 30px
-				color: transparentize($orange,0.03)
+				color: transparentize($orange,0.1)
 				margin-right: 15px
 
 				&:hover
@@ -84,7 +84,7 @@
 
 			.ion-social-twitter
 				font-size: 30px
-				color: transparentize($orange,0.03)
+				color: transparentize($orange,0.1)
 				margin-right: 15px
 				padding-left: 15px
 				border-left: 1px solid transparentize($orange,.8)

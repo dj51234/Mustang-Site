@@ -8,3 +8,182 @@
 		text-shadow: -4px -4px 3px rgba(252, 255, 252, .4)
 		text-transform: uppercase
 		font-weight: 300
+
+	.quote-container
+		display: flex
+		margin: 100px auto
+		max-width: 1000px
+		align-items: center 
+		justify-content: space-between
+		padding: 0 10px
+
+		.left-cta
+			max-width: 400px
+			height: 550px
+			background-color: transparentize(white, .9)	
+			border: 20px solid transparentize(black, .5)
+			padding: 20px 50px
+
+			.cta-content
+
+				.your-price
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding: 5px 8px
+					border-top: 1px solid transparentize(white, .7)	
+					border-bottom: 1px solid transparentize(white, .7)
+
+
+					h2
+						font-size: 22px
+
+					.ion-arrow-right-a
+						font-size: 30px
+
+				.cta-quote-price
+					margin-bottom: 50px
+
+					h3
+						margin-top: 40px
+
+				.cta-image
+					background: url(../assets/images/features/feat10.jpg) center center no-repeat
+					width: 275px
+					height: 235px
+					border: 3px solid $orange
+					border-radius: 5px
+					margin: 20px auto
+
+				h1
+					font-weight: 400
+					text-shadow: none 
+					font-size: 28px
+					margin-top: 0
+				h2
+					font-weight: 300
+					text-transform: uppercase
+					margin: 0
+
+					span
+						font-weight: 400
+						color: $orange
+
+				p 
+					font-size: 12px
+
+		.quote-form
+			max-width: 400px
+			height: 550px
+			background-color: transparentize(white, .9)	
+			border: 20px solid transparentize(black, .5)
+			padding: 20px 0
+			
+			form 
+				width: 400px
+				margin: 30px auto 0
+				text-align: center
+				text-transform: uppercase
+				
+				
+				h3
+					font-weight: 300
+					letter-spacing: 1px
+
+				p 
+					font-size: 12px
+					font-weight: 300
+
+				input
+					display: block
+					width: 70%
+					border-radius: 15px
+					background-color: transparentize(white, .7) 
+					border: none
+					margin: 25px auto
+					padding: 5px 10px
+					color: white
+					letter-spacing: 1px
+					font-weight: 300
+					text-transform: capitalize
+
+				.button
+					text-decoration: none
+					padding: 10px 15px
+					background-color: transparentize(white, .1)	
+					box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4)
+					display: inline-block
+					opacity: .95
+
+					&:hover
+						opacity: 1
+						background-color: transparentize(white, .05)	
+
+					
+					span 
+						color: #333 
+						text-transform: uppercase
+						letter-spacing: 1px
+						font-weight: 700
+
+@media (max-width: 1050px)
+	#get-a-quote
+
+		.quote-container
+			flex-direction: column
+
+			.left-cta 
+				margin-bottom: 75px
+
+@media (max-width: 550px)
+	#get-a-quote
+
+		.quote-container
+			padding: 0 10px
+			.left-cta 
+				width: 250px
+				height: 610px
+				border: 5px solid transparentize(black, .5)
+
+				.cta-content 
+					.cta-image
+						width: 250px
+						margin-left: -5px
+
+			.quote-form
+				width: 350px
+				height: 550px
+				background-color: transparentize(white, .9)	
+				border: 5px solid transparentize(black, .5)
+
+				form 
+					width: 300px
+				
+@media (max-width: 400px)
+	#get-a-quote
+
+		.quote-container
+			
+			.left-cta 
+				width: 200px
+				height: 600px
+				// margin-left: -30px
+				border: 5px solid transparentize(black, .5)
+
+				.cta-content
+
+					.your-price
+						.ion-arrow-right-a
+							display: none
+					.cta-image
+						width: 250px
+						margin-left: -30px
+
+			.quote-form
+				width: 300px
+				height: 550px
+				background-color: transparentize(white, .9)	
+				border: 5px solid transparentize(black, .5)
+
+				form 
+					width: 250px

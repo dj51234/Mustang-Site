@@ -1,6 +1,7 @@
 #specs
 	color: white
 	text-align: center
+	position: relative
 
 	h1 
 		font-size: 18px
@@ -8,3 +9,103 @@
 		text-shadow: -4px -4px 3px rgba(252, 255, 252, .4)
 		text-transform: uppercase
 		font-weight: 300
+
+	.specs-container
+		max-width: 1000px
+		margin: 200px auto 100px 
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap 
+		padding: 15px
+
+		.spec-unit-mid
+			position: relative
+
+			.mustang-logo
+				background: url(../assets/images/mustang-logo.png) center center no-repeat
+				background-size: contain
+				width: 467px
+				height: 200px
+				+position(absolute,-27% null null -10%)
+
+
+		.spec-unit
+			background-color: transparentize(white,.99)
+			width: 300px
+			height: 620px
+			text-transform: uppercase
+			padding-top: 10px
+			border: 3px solid transparentize($orange,.95)
+			
+
+			.title
+				letter-spacing: 1px
+				font-size: 13px
+				padding: 10px 10px 5px 10px
+				border-bottom: 1px solid transparentize($orange,.9)
+
+			.price
+				color: $orange
+				font-size: 16px
+
+			h4
+				color: #EEE
+				letter-spacing: 1px
+				margin-bottom: 2px
+				margin-top: 0px
+
+			p 
+				font-weight: 300
+				color: #DDD
+				margin-bottom: 50px
+				margin-top: 0
+				font-size: 14px
+
+			.ion-arrow-down-b
+				color: $orange
+				opacity: .7
+
+@media (max-width: 1000px)
+	#specs
+
+
+		.specs-container
+			max-width: 1000px
+			margin: 200px auto 100px 
+			display: flex
+			justify-content: space-around
+			flex-direction: column
+
+			.spec-unit 
+				margin: 0 auto 30px
+
+			.spec-unit-mid
+
+				.mustang-logo
+					+position(absolute,-131.7% null null -10%)
+@media (max-width: 720px)
+	#specs
+
+		.specs-container
+
+			.spec-unit-mid
+
+				.mustang-logo
+					width: 300px
+					height: 128px
+					+position(absolute,-120% null null 8%)
+
+@media (max-width: 480px)
+	#specs
+
+		.specs-container
+
+			.spec-unit
+				width: 280px
+
+			.spec-unit-mid
+
+				.mustang-logo
+					width: 250px
+					height: 107px
+					+position(absolute,-120% null null 15%)

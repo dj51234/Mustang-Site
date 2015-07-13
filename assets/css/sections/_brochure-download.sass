@@ -2,9 +2,157 @@
 	color: white
 	text-align: center
 
+
 	h1 
 		font-size: 18px
-		margin-top: 75px
+		margin: 75px 0
 		text-shadow: -4px -4px 3px rgba(252, 255, 252, .4)
 		text-transform: uppercase
 		font-weight: 300
+
+	.container
+		display: flex
+		margin: 0 auto
+		max-width: 1000px
+		align-items: center 
+		justify-content: space-between
+
+		.images
+			position: relative 
+			margin-top: -200px
+
+			.broc-image1
+				background: url(../assets/images/brochure/broc1.jpg)
+				background-size: cover
+				height: 250px
+				width: 300px
+				border: 3px solid $orange
+				border-radius: 2px
+				+position(absolute, 50% null null 50%)
+
+			.broc-image2
+				background: url(../assets/images/brochure/broc2.jpg)
+				background-size: cover
+				height: 250px
+				width: 300px
+				border: 3px solid $orange
+				border-radius: 5px
+
+		.brochure-form
+			max-width: 400px
+			height: 550px
+			background-color: transparentize(white, .9)	
+			border: 20px solid transparentize(black, .5)
+			padding: 20px 0
+			
+			
+			form 
+				width: 400px
+				margin: 30px auto 0
+				text-align: center
+				text-transform: uppercase
+				
+				
+				h3
+					font-weight: 300
+					letter-spacing: 1px
+
+				p 
+					font-size: 12px
+					font-weight: 300
+
+				input
+					display: block
+					width: 70%
+					border-radius: 15px
+					background-color: transparentize(white, .7) 
+					border: none
+					margin: 25px auto
+					padding: 5px 10px
+					color: white
+					letter-spacing: 1px
+					font-weight: 300
+					text-transform: capitalize
+
+				.button
+					text-decoration: none
+					padding: 10px 15px
+					background-color: transparentize(white, .1)	
+					box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4)
+					display: inline-block
+					opacity: .95
+
+					&:hover
+						opacity: 1
+						background-color: transparentize(white, .05)	
+
+					
+					span 
+						color: #333 
+						text-transform: uppercase
+						letter-spacing: 1px
+						font-weight: 700
+
+@media (max-width: 1035px)
+	#brochure-download
+
+		.container
+			flex-direction: column
+			justify-content: space-around
+
+			.images
+				margin: 0 0 250px -150px
+
+@media (max-width: 578px)
+	#brochure-download
+
+		.container
+
+			.brochure-form
+				border: 5px solid transparentize(black, .5)
+
+				form
+					width: 280px
+
+			.images
+				margin: 0 0 150px -100px
+				.broc-image1
+					background: url(../assets/images/brochure/broc1.jpg)
+					background-size: cover
+					height: 167px
+					width: 200px
+					border: 3px solid $orange
+					border-radius: 2px
+					+position(absolute, 50% null null 50%)
+
+				.broc-image2
+					background: url(../assets/images/brochure/broc2.jpg)
+					background-size: cover
+					height: 167px
+					width: 200px
+					border: 3px solid $orange
+					border-radius: 5px
+		
+@media (max-width: 340px)
+	#brochure-download
+
+		.container
+
+			.images
+				margin: 0 0 150px -90px
+				.broc-image1
+					background: url(../assets/images/brochure/broc1.jpg)
+					background-size: cover
+					height: 150px
+					width: 180px
+					border: 3px solid $orange
+					border-radius: 2px
+					+position(absolute, 50% null null 50%)
+
+				.broc-image2
+					background: url(../assets/images/brochure/broc2.jpg)
+					background-size: cover
+					height: 150px
+					width: 180px
+					border: 3px solid $orange
+					border-radius: 5px

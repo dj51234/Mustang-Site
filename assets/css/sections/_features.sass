@@ -8,4 +8,54 @@
 		text-transform: uppercase
 		font-weight: 300
 
+	.features-gallery
+		display: flex
+		margin: 75px auto 0
+		max-width: 1000px
+		justify-content: space-between
+		flex-wrap: wrap
+		line-height: 15px
+		padding: 10px
+
+		.image-unit
+			display: flex
+			justify-content: space-between
+			width: 450px
+			margin: 0 auto 60px
+
+			.image
+				height: 100px
+				width: 150px
+				border: 3px solid $orange
+				border-radius: 2px
+
+			.description
+				margin-top: -30px
+				padding-left: 20px
+
+				h3
+					font-size: 16px
+					text-transform: uppercase
+					border-bottom: 2px solid $orange
+					padding-bottom: 7px
+					display: inline-block
+
+				p 
+					font-size: 12px
+					max-width: 350px
+					margin: 0
+					line-height: 20px
+
+@media (max-width: 480px)
+	#features 
+		.features-gallery
+			.image-unit
+				flex-direction: column
+				align-items: center
+
+				.description
+					margin-top: 5px
+
+				
+
 	

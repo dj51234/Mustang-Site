@@ -3,9 +3,9 @@
 	<div class="features-gallery">
 		{% for feature in site.data.settings.features %}
 		<div class="image-unit">
-			<div class="image" style="background: url(assets/images/gallery/{{feature.image}}.jpg);"></div>
-			<div class="title"><h3>{{feature.title}}</h3></div>
+			<div class="image" style="background: url(assets/images/features/{{feature.image}}.jpg) center top no-repeat;background-size: 180%;"></div>
 			<div class="description">
+				<h3>{{feature.title}}</h3>
 				<p>{{feature.description}}</p>
 			</div>
 		</div>

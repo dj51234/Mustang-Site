@@ -1,19 +1,22 @@
 #footer
+	margin: 0 auto
+	clear: both
+
 	.footer-content
 		display: flex
-		justify-content: space-around
+		justify-content: space-between
 		align-items: top
 		max-width: 960px
 		margin: 70px auto 30px
 		border-top: 1px solid transparentize(white, .9)
 		padding: 35px 10px 0
+		flex-wrap: wrap
 
 		ul 
 			text-align: center
 			line-height: 35px
-
-			&:nth-child(2)
-				margin-left: -75px
+			width: 33%
+			padding-left: 0
 
 			li 
 				color: #BBB
@@ -21,7 +24,7 @@
 				font-weight: 300
 
 				&:hover
-					color: white
+					color: transparentize($orange, .5) 
 
 				b 
 					color: white
@@ -34,7 +37,7 @@
 					color: white 
 
 				&:hover
-					color: white 
+					color: transparentize($orange, .5) 
 
 
 	p 
@@ -44,3 +47,4 @@
 		font-size: 12px
 		text-align: center
 		letter-spacing: 2px
+

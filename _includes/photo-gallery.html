@@ -1,6 +1,12 @@
 <section id="photo-gallery">
 	<h1>Photo Gallery</h1>
-	<div class="gallery">
-		
+	<div id="mylightbox" class="gallery">
+		{% for image in site.data.settings.gallery %}
+		<a data-featherlight="assets/images/gallery/{{image.image}}.jpg">
+			<div class="image" style="background: url(assets/images/gallery/{{image.image}}-1.jpg) center top no-repeat;">
+				<div class="overlay"><i class="ion-plus"></i></div>
+			</div>
+		</a>
+		{% endfor %}
 	</div>
 </section>

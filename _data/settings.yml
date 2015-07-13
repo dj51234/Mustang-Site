@@ -1,5 +1,27 @@
-#GALLERY#
+#FEATURES#
 
 features:
-- {image: '', title: '', description: '<p>greiojgpreiwjgphepwo9hgpwehgpiuw</p>'}
+- {image: 'feat7', title: '2.3L Ecoboost®', description: "<p>Exhilarating power combined with efficiency that performance drivers will call icing on the cake with 310 hp* and 320 lb.-ft. of torque.* And best-in-class EPA-estimated 21 city/32 hwy/25 combined mpg**. A new optimally sized twin-scroll turbocharger separates the exhaust runners in two chambers that run all the way to the turbine.</p>"}
+- {image: 'feat2', title: "Track Apps™ Smoke 'Em If You Got 'Em", description: "<p>New for 2015, Track Apps™ features Electronic Line-Lock and launch control, and provides performance metrics instantly on the 4.2-inch message center screen in the instrument cluster.</p>"}
+- {image: 'feat1', title: "Shaker™ Pro Audio with HD Radio™", description: "<p>The 390-watt Shaker Pro Audio System with HD Radio Technology is available on EcoBoost® Premium and GT Premium models. The audio system includes an AM/FM stereo, single-CD/MP3 player and 12 speakers including an eight-inch subwoofer which has been smartly-mounted in the trunk.</p>"}
+- {image: 'feat6', title: "Exterior Design", description: "<p>The classic Mustang Fastback has returned. And with an entirely new energy. The aerodynamics have been improved. The new body is wider and sits lower than the previous model. There are sharp, new signature HID headlamps standard and standard signature LED tri-bar taillamps with sequential turn signals.</p>"}
+- {image: 'feat3', title: "Independent Rear Suspension", description: "<p>The 2015 Ford Mustang features an all-new integral link independent rear suspension that helps improve body roll and isolate road imperfections for a better feel, improved ride and precise handling that run all the way to the turbine.</p>"}
+- {image: 'feat10', title: "Electronic Line Lock", description: "<p>Electronic Line-Lock, standard on Mustang GT, is the first feature of its kind in the industry, and the perfect tool for Mustang owners who love to test their skills at the track.* Electronic Line-Lock keeps the front brakes locked while releasing the rear brakes.</p>"}
+- {image: 'feat4', title: "New Interior", description: "<p>The all-new 2015 Mustang interior is loaded with a number of comfort and convenience features. It starts with getting in the car - the front seats now feature memory recline capability that returns the seats to their previously set positions if positions are temporarily changed.</p>"}
+- {image: 'feat-4', title: "Shelby GT350®", description: "<p>What truly sets this Beast apart is that the Shelby GT350® isn’t just a combination of “go fast” parts – any tuner can build one of those. The GT350 is a specifically engineered machine, where the components work dynamically together as one and perform to a world-class level on all fronts, as well as meeting Ford durability standards. It’s all due to the focus of Ford Performance to make a car that delivers thrills like this.</p>"}
 
+#PHOTO GALLERY#
+
+gallery:
+- {image: 'img-5', att: '1'}
+- {image: 'img-6', att: '2'}
+- {image: 'img-7', att: '3'}
+- {image: 'img-8', att: '4'}
+- {image: 'img-9', att: '5'}
+- {image: 'img-10', att: 6'}
+- {image: 'img-11', att: '7'}
+- {image: 'img-12', att: '8'}
+- {image: 'img-1', att: '9'}
+- {image: 'img-2', att: '10'}
+- {image: 'img-3', att: '11'}
+- {image: 'img-4', att: '12'}
