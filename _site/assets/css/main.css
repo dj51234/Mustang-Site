@@ -409,7 +409,7 @@ th {
       #header nav a:nth-child(4) {
         border-right: none; }
   #header .ford-logo {
-    background: url(../assets/images/ford-logo.png);
+    background: url(../images/ford-logo.png);
     width: 96px;
     height: 37px;
     background-size: contain;
@@ -485,7 +485,7 @@ th {
     #header nav a {
       font-size: 10px; } }
 #main-cta .bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../assets/images/roush.jpg) left center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/roush.jpg) left center no-repeat;
   max-width: 100%;
   height: 900px;
   margin: 0 auto;
@@ -735,7 +735,7 @@ th {
     #specs .specs-container .spec-unit-mid {
       position: relative; }
       #specs .specs-container .spec-unit-mid .mustang-logo {
-        background: url(../assets/images/mustang-logo.png) center center no-repeat;
+        background: url(../images/mustang-logo.png) center center no-repeat;
         background-size: contain;
         width: 467px;
         height: 200px;
@@ -867,7 +867,7 @@ th {
       position: relative;
       margin-top: -200px; }
       #brochure-download .container .images .broc-image1 {
-        background: url(../assets/images/brochure/broc1.jpg);
+        background: url(../images/brochure/broc1.jpg);
         background-size: cover;
         height: 250px;
         width: 300px;
@@ -877,7 +877,7 @@ th {
         top: 50%;
         left: 50%; }
       #brochure-download .container .images .broc-image2 {
-        background: url(../assets/images/brochure/broc2.jpg);
+        background: url(../images/brochure/broc2.jpg);
         background-size: cover;
         height: 250px;
         width: 300px;
@@ -915,6 +915,7 @@ th {
         #brochure-download .container .brochure-form form .button {
           text-decoration: none;
           padding: 10px 15px;
+          margin-top: 20px;
           background-color: rgba(255, 255, 255, 0.9);
           box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
           display: inline-block;
@@ -942,8 +943,6 @@ th {
   #brochure-download .container .images {
     margin: 0 0 150px -100px; }
     #brochure-download .container .images .broc-image1 {
-      background: url(../assets/images/brochure/broc1.jpg);
-      background-size: cover;
       height: 167px;
       width: 200px;
       border: 3px solid #F94828;
@@ -952,8 +951,6 @@ th {
       top: 50%;
       left: 50%; }
     #brochure-download .container .images .broc-image2 {
-      background: url(../assets/images/brochure/broc2.jpg);
-      background-size: cover;
       height: 167px;
       width: 200px;
       border: 3px solid #F94828;
@@ -962,8 +959,6 @@ th {
   #brochure-download .container .images {
     margin: 0 0 150px -90px; }
     #brochure-download .container .images .broc-image1 {
-      background: url(../assets/images/brochure/broc1.jpg);
-      background-size: cover;
       height: 150px;
       width: 180px;
       border: 3px solid #F94828;
@@ -972,8 +967,6 @@ th {
       top: 50%;
       left: 50%; }
     #brochure-download .container .images .broc-image2 {
-      background: url(../assets/images/brochure/broc2.jpg);
-      background-size: cover;
       height: 150px;
       width: 180px;
       border: 3px solid #F94828;
@@ -1014,9 +1007,13 @@ th {
       #get-a-quote .quote-container .left-cta .cta-content .cta-quote-price {
         margin-bottom: 50px; }
         #get-a-quote .quote-container .left-cta .cta-content .cta-quote-price h3 {
-          margin-top: 40px; }
+          margin-top: 40px;
+          color: rgba(255, 255, 255, 0.1); }
+          #get-a-quote .quote-container .left-cta .cta-content .cta-quote-price h3 hr {
+            width: 120px;
+            margin-top: -15px; }
       #get-a-quote .quote-container .left-cta .cta-content .cta-image {
-        background: url(../assets/images/features/feat10.jpg) center center no-repeat;
+        background: url(../images/features/feat10.jpg) center center no-repeat;
         width: 275px;
         height: 235px;
         border: 3px solid #F94828;
@@ -1068,6 +1065,7 @@ th {
         #get-a-quote .quote-container .quote-form form .button {
           text-decoration: none;
           padding: 10px 15px;
+          margin-top: 20px;
           background-color: rgba(255, 255, 255, 0.9);
           box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
           display: inline-block;
@@ -1164,5 +1162,5 @@ body {
   font-family: "Oswald"; }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.975), rgba(0, 0, 0, 0.975)), url(/assets/images/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97)), url(../images/bg.jpg);
   background-size: cover; }
