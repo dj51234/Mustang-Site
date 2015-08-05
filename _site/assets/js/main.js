@@ -8,9 +8,19 @@ $(document).ready(function() {
 	$('a.gallery').featherlightGallery({
     openSpeed: 300
 	});
+
+	$('#header a').click(function(){
+		$('#header').next().addClass('slideOutLeft');
+	});
+
+
 });
 
-
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $('#specs').offset().top + 200) {
+       $('.mustang-logo').addClass('animated fadeInRight');
+   }
+});
 
 
 

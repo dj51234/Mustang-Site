@@ -4,6 +4,9 @@ Site for Ford Mustang
 View Site At http://dj51234.github.io/Mustang-Site
 
 7/12/2015: Changed Color scheme from light blue to Dark Orange.  Home Page Image was too cluttered and didn't fit the site theme.
+Extras:
+
+- Make navbar fixed and hide logo/search bar when scrolling below those elements.
 
 To do:
 - ̶T̶o̶p̶ ̶N̶a̶v̶i̶g̶a̶t̶i̶o̶n̶
