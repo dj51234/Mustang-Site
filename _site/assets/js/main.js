@@ -6,7 +6,7 @@ $(document).ready(function() {
 		$('.overlay', this).css('opacity','0');
 	});
 	$('a.gallery').featherlightGallery({
-    openSpeed: 300
+    
 	});
 
 	$('#header a').click(function(){
@@ -21,8 +21,3 @@ $(window).scroll(function() {
        $('.mustang-logo').addClass('animated fadeInRight');
    }
 });
-
-
-
-
-
